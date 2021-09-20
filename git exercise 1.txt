@@ -1,0 +1,58 @@
+ques Create a repository
+1. made a repository and initialized it using git init
+
+ques Make some changes -- add some files, change content of some files
+2. made a new html file html_file.html
+3. added the html_file to staging area using git add 
+4. used git status to check the status
+5. used git commit -m "Initial commit" to commit the file.
+6. used git status to check the status.
+
+ques repeat steps 1-3 for 2 more times. try to remove and ignore some files . Use git diff before each commit.
+7. made three new html files about.html, contact.html, info.html and added all of them to staging area using git add -A
+8. mmodified the contact.html file and used git status to check status.
+9. now added this modified contact.html file to staging area using area using git add -A.
+10. comitted the changes using git commit -m "added three new html files".
+11. agin made some change in contact.html and used git diff (shows difference between working tree and staging).
+12. used git log to display commits.
+13. created a new file waste.html and added to staging area using git add waste.html
+14. comitted using git commit -m "adding waste".
+15. now deleted this file using git rm waste.html
+16. comitted the changes using git commit -m "removing waste".
+17. created .gitignore and mylogs.log file(this will be ignored).
+18. git status to view the status. Added mylogs.log inside .gitignore.
+19. again git.status to see the change. used git add -A to add to the staging area.
+20. comitted using git commit -m "modified some files and added gitignore"
+
+ques create changes and revert those changes after adding changes to staging area
+ques create change and revert those changes after committing those changes .
+ques Check repository status before adding changes to staging area, after adding changes to staging area and after committing changes .
+ques Display all the commits .
+ques Display a specific commit .
+21. made a new file newfile.html and added too staging area using git add newfile.html
+22. modified the new file and used git status to check status.
+23. used git reset to revert the change.
+24 diplayed two specific commits using git log -p -2
+
+ques create branches called "feature1" and "feature2" from master. 11 . Delete branch "feature2".
+25. created two branches feature1 and feature2.
+26. deleted feature2 git branch -d feature2
+
+ques Make some commits on "feature1".
+ques Make some commits on branch "master".
+27. made changes in contact.html in feature1 and comitted it.
+28. made changes in contact .html in master and comitted it.
+
+ques merge branch "feature1" in "master" (make some conflicts by changing same file on same line in both the branches) 15.create branch "feature2" from master .
+29. merged feature1 using git merge feature1
+30. comitted the changes git commit -m "merged feature1"
+
+ques Make some commits on "feature2".
+ques Make some commits on branch "master".
+31. created feature2 branch git checkout -b feature2
+32. modified newfile.html and addeto stage git add -A
+33. comitted using git commit -m "modified newfile.html"
+
+ques rebase branch "master" in "feature2"
+34. used git rebase master
+35.git push -u origin master to push it to github
